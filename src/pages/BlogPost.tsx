@@ -8,7 +8,7 @@ export default function BlogPost() {
   const { id } = useParams<{ id: string }>();
   const { t, i18n } = useTranslation();
   
-  const currentLang = i18n.resolvedLanguage || 'en';
+  const currentLang = i18n.resolvedLanguage || 'it';
   const posts = getBlogPosts();
   const post = posts.find(p => p.id === id && p.language === currentLang);
 

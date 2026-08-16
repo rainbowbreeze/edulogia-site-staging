@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 export default function Home() {
   const { t, i18n } = useTranslation();
   
-  const currentLang = i18n.resolvedLanguage || 'en';
+  const currentLang = i18n.resolvedLanguage || 'it';
   const resources = getResources().filter(r => r.language === currentLang);
   const featuredResource = resources.find(r => r.featured) || resources[0];
   

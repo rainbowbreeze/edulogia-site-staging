@@ -7,7 +7,7 @@ export default function Blog() {
   const { t, i18n } = useTranslation();
   const [searchParams, setSearchParams] = useSearchParams();
   
-  const currentLang = i18n.resolvedLanguage || 'en';
+  const currentLang = i18n.resolvedLanguage || 'it';
   const blogPosts = getBlogPosts().filter(p => p.language === currentLang);
 
   const pageParam = searchParams.get('page');

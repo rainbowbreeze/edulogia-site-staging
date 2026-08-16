@@ -13,7 +13,7 @@ export default function Resources() {
   const { t, i18n } = useTranslation();
   const [searchParams, setSearchParams] = useSearchParams();
   
-  const currentLang = i18n.resolvedLanguage || 'en';
+  const currentLang = i18n.resolvedLanguage || 'it';
   const allResources = getResources().filter(r => r.language === currentLang);
 
   const featuredResources = allResources.filter(r => r.featured);
