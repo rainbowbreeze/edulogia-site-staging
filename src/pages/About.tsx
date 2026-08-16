@@ -15,16 +15,16 @@ export default function About() {
         <div className="relative z-10 flex flex-col md:flex-row gap-12 items-center">
           <div className="flex-1 max-w-2xl">
             <h1 className="text-5xl md:text-7xl font-display font-bold text-slate-900 mb-8">
-              {t('about.title', 'About Us')} 
+              {t('about.title', 'About me')} 
             </h1>
             <p className="text-2xl text-slate-900 font-medium leading-relaxed font-sans">
-              {t('about.intro', "I'm a passionate educator and technologist working to bridge the gap between digital tools and healthy child development. More story coming soon...")}
+              {t('about.intro', "I'm a passionate educator and technologist working to bridge the gap between digital tools and healthy child development.")}
             </p>
           </div>
           <div className="w-full md:w-[400px] flex-shrink-0">
             <div className="aspect-square bg-brand-pink rounded-3xl border-[3px] border-slate-900 shadow-[8px_8px_0_0_#0f172a] overflow-hidden rotate-3 hover:rotate-0 transition-transform duration-300">
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800&h=800" 
+                src="/images/alfredo-moresi-profile.jpg" 
                 alt="Profile" 
                 className="w-full h-full object-cover"
               />
