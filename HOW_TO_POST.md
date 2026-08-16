@@ -79,3 +79,16 @@ Draft content goes here...
 2. Read the file's contents to inspect its current frontmatter.
 3. Edit the file to modify the frontmatter: change `draft: true` to `draft: false` (or remove the `draft` line).
 4. If necessary, rename or move the file so the `YYYYMMDD` prefix matches the actual publication date.
+
+---
+
+## 3. Images & Media
+
+When creating or editing content that includes embedded images:
+- **Blog Posts**: Place any images intended to be embedded within the blog post text inside the `public/blog/` directory.
+- **Resources**: Place any images intended to be embedded within the resource text inside the `public/resource/` directory.
+
+**Image Naming Convention:**
+All images must follow the format `YYYYMMDD-image-slug.ext` (e.g., `.jpg`, `.png`), using the exact same `YYYYMMDD` date prefix as their associated blog post or resource file.
+
+*Example:* If a blog post is named `20260816-digital-safety.en.md`, its embedded images should be placed at `public/blog/20260816-screen-time-chart.png` and referenced in the markdown as `![Screen Time Chart](/blog/20260816-screen-time-chart.png)`.

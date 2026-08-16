@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { getResources } from '../lib/resources';
 import { Download, FileText, Shield, Gamepad2, Search, ArrowLeft, ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
@@ -12,12 +13,23 @@ const icons: Record<string, React.ElementType> = {
 export default function Resources() {
   const { t, i18n } = useTranslation();
   const [searchParams, setSearchParams] = useSearchParams();
+  const [searchQuery, setSearchQuery] = useState('');
   
   const currentLang = i18n.resolvedLanguage || 'it';
   const allResources = getResources().filter(r => r.language === currentLang);
 
-  const featuredResources = allResources.filter(r => r.featured);
-  const regularResources = allResources.filter(r => !r.featured);
+  const filteredResources = allResources.filter(r => {
+    if (!searchQuery.trim()) return true;
+    const query = searchQuery.toLowerCase();
+    return (
+      r.title?.toLowerCase().includes(query) ||
+      r.description?.toLowerCase().includes(query) ||
+      r.tags?.some((tag: string) => tag.toLowerCase().includes(query))
+    );
+  });
+
+  const featuredResources = filteredResources.filter(r => r.featured);
+  const regularResources = filteredResources.filter(r => !r.featured);
 
   const pageParam = searchParams.get('page');
   const currentPage = pageParam ? parseInt(pageParam, 10) : 1;
@@ -95,6 +107,11 @@ export default function Resources() {
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-600 w-6 h-6" />
             <input 
               type="text" 
+              value={searchQuery}
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                setSearchParams({ page: '1' }); // Reset pagination on search
+              }}
               placeholder={t('resources.search_placeholder')} 
               className="w-full bg-white border-3 border-slate-900 text-slate-900 rounded-2xl py-4 pl-14 pr-4 focus:outline-none focus:border-brand-pink focus:ring-4 focus:ring-brand-pink/20 transition-all font-medium text-lg"
             />

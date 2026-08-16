@@ -40,9 +40,12 @@ export default function About() {
             <h2 className="text-3xl font-display font-bold text-slate-900 mb-6 relative z-10">
                 {t('about.mission_title', 'Our Mission')}
             </h2>
-            <p className="text-lg text-slate-700 font-medium leading-relaxed mb-6 font-sans relative z-10">
-               {t('about.mission_description', 'To empower parents with the knowledge and tools they need to guide their children in a rapidly evolving digital landscape. We believe technology should serve education and connection, not distraction.')}
-            </p>
+            <p 
+              className="text-lg text-slate-700 font-medium leading-relaxed mb-6 font-sans relative z-10"
+              dangerouslySetInnerHTML={{
+                __html: t('about.mission_description', 'To empower parents with the knowledge and tools they need to guide their children in a rapidly evolving digital landscape. We believe technology should serve education and connection, not distraction.')
+              }}
+            />
         </div>
 
         <div className="bg-brand-pink p-8 rounded-3xl chunky-box flex flex-col justify-center relative shadow-[6px_6px_0_0_#0f172a]">
@@ -53,9 +56,12 @@ export default function About() {
             <h2 className="text-3xl font-display font-bold text-slate-900 mb-6 relative z-10">
                  {t('about.vision_title', 'Our Vision')}
             </h2>
-            <p className="text-lg text-slate-900 font-medium leading-relaxed font-sans relative z-10">
-                 {t('about.vision_description', 'A world where families talk openly about technology, create healthy boundaries together, and use digital tools to expand their horizons and spark creativity.')}
-            </p>
+            <p 
+              className="text-lg text-slate-900 font-medium leading-relaxed font-sans relative z-10"
+              dangerouslySetInnerHTML={{
+                __html: t('about.vision_description', 'A world where families talk openly about technology, create healthy boundaries together, and use digital tools to expand their horizons and spark creativity.')
+              }}
+            />
         </div>
       </div>
 
