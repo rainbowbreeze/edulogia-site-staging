@@ -56,13 +56,16 @@ export default function Layout() {
               })}
               <div className="flex items-center gap-2 border-l border-slate-200 pl-4 ml-2">
                 <Globe className="w-4 h-4 text-slate-400" />
+                <span className="text-base leading-none" title={i18n.resolvedLanguage === 'it' ? 'Italiano' : 'English'}>
+                  {i18n.resolvedLanguage === 'it' ? '🇮🇹' : '🇬🇧'}
+                </span>
                 <select
                   value={i18n.resolvedLanguage}
                   onChange={(e) => i18n.changeLanguage(e.target.value)}
                   className="bg-transparent text-sm font-medium text-slate-600 focus:outline-none cursor-pointer"
                 >
-                  <option value="en">EN</option>
                   <option value="it">IT</option>
+                  <option value="en">EN</option>
                 </select>
               </div>
             </nav>
@@ -98,6 +101,9 @@ export default function Layout() {
               <div className="flex items-center justify-between p-3 border-t-2 border-slate-100 mt-2">
                 <div className="flex items-center gap-2 text-slate-600">
                   <Globe className="w-5 h-5 text-brand-pink" />
+                  <span className="text-lg leading-none">
+                    {i18n.resolvedLanguage === 'it' ? '🇮🇹' : '🇬🇧'}
+                  </span>
                   <span className="font-display font-medium">Language</span>
                 </div>
                 <select
@@ -105,8 +111,8 @@ export default function Layout() {
                   onChange={(e) => i18n.changeLanguage(e.target.value)}
                   className="bg-slate-50 border-2 border-slate-200 text-sm font-medium text-slate-700 rounded-lg px-3 py-1 focus:outline-none focus:border-slate-900"
                 >
-                  <option value="en">English</option>
                   <option value="it">Italiano</option>
+                  <option value="en">English</option>
                 </select>
               </div>
             </div>
@@ -137,7 +143,6 @@ export default function Layout() {
               <ul className="space-y-2 text-sm">
                 <li><Link to="/blog" className="hover:text-brand-yellow transition-colors">{t('layout.footer.blog')}</Link></li>
                 <li><Link to="/resources" className="hover:text-brand-yellow transition-colors">{t('layout.footer.guides')}</Link></li>
-                <li><Link to="/resources" className="hover:text-brand-yellow transition-colors">{t('layout.footer.tutorials')}</Link></li>
               </ul>
             </div>
             <div>

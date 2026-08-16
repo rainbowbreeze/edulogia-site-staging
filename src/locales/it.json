@@ -11,7 +11,7 @@
       "description": "Un'iniziativa no-profit per aiutare i genitori a navigare nel mondo digitale, bilanciando l'uso della tecnologia con pratiche educative sane.",
       "quick_links": "Link Utili",
       "blog": "Il nostro Blog",
-      "guides": "Guide Scaricabili",
+      "guides": "Guide e tutorial",
       "tutorials": "Tutorial",
       "connect": "Rimani in contatto",
       "connect_desc": "Ricevi le ultime risorse e articoli direttamente nella tua casella di posta.",
@@ -47,9 +47,9 @@
     "title": "Chi Sono",
     "intro": "Mi chiamo Alfredo e sono un padre, un nerd e un educatore. Credo fermamente che il mondo digitale sia un alleato prezioso e un valido strumento per l'educazione dei nostri figli, ma sono altrettanto convinto che vada usato con MOLTA cognizione di causa.",
     "mission_title": "Perché Edulogia",
-    "mission_description": "Perché sappiamo tutti quanto sia difficile trovare il giusto equilibrio tra mondo digitale, uso dei cellulari e una crescita sana. Edulogia nasce per rispondere a questa sfida quotidiana, fornendo ai genitori e a tutta la comunità educante conoscenze e strumenti per guidare i nostri figli in un panorama digitale in rapida e costante evoluzione.",
+    "mission_description": "Perché sappiamo tutti quanto sia difficile trovare il giusto equilibrio tra mondo digitale, uso dei cellulari e una crescita sana. Edulogia nasce per rispondere a questa sfida quotidiana, <strong>fornendo ai genitori e a tutta la comunità educante conoscenze e strumenti</strong> per guidare i nostri figli in un panorama digitale in rapida e costante evoluzione.",
     "vision_title": "Come?",
-    "vision_description": "Con risorse e guide per usare il Parental Control dei cellulari a supporto di un sano dialogo tra genitori e figli, e per capire meglio come usare gli strumenti digitali per espandere gli orizzonti dei ragazzi e stimolare la loro creatività."
+    "vision_description": "Con <strong>risorse e guide</strong> per usare il Parental Control dei cellulari a supporto di un sano dialogo tra genitori e figli, e per capire meglio come usare gli strumenti digitali per espandere gli orizzonti dei ragazzi e stimolare la loro creatività."
   },
   "resources": {
     "title": "Libreria delle Risorse",

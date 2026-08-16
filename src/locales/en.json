@@ -11,7 +11,7 @@
       "description": "A non-profit initiative helping parents navigate the digital world, balancing technology use with healthy educational practices.",
       "quick_links": "Quick Links",
       "blog": "Our Blog",
-      "guides": "Downloadable Guides",
+      "guides": "Tutorials and guides",
       "tutorials": "Tutorials",
       "connect": "Connect",
       "connect_desc": "Get the latest resources and articles sent to your inbox.",
@@ -47,9 +47,9 @@
     "title": "About me",
     "intro": "My name is Alfredo, and I am a father, a nerd, and an educator. I firmly believe that the digital world is a precious ally and a valid tool for our children's education, but I am equally convinced that it must be used with a LOT of awareness.",
     "mission_title": "Why Edulogia",
-    "mission_description": "Because we all know how difficult it is to find the right balance between the digital world, cell phone use, and healthy growth. Edulogia was created to respond to this daily challenge by providing parents and the entire educational community with the knowledge and tools to guide our children in a rapidly and constantly evolving digital landscape.",
+    "mission_description": "Because we all know how difficult it is to find the right balance between the digital world, cell phone use, and healthy growth. Edulogia was created to respond to this daily challenge by <strong>providing parents and the entire educational community with the knowledge and tools</strong> to guide our children in a rapidly and constantly evolving digital landscape.",
     "vision_title": "How?",
-    "vision_description": "With resources and guides on using cell phone Parental Controls to support a healthy dialogue between parents and children, and to better understand how to use digital tools to expand kids' horizons and stimulate their creativity."
+    "vision_description": "With <strong>resources and guides</strong> on using cell phone Parental Controls to support a healthy dialogue between parents and children, and to better understand how to use digital tools to expand kids' horizons and stimulate their creativity."
   },
   "resources": {
     "title": "Resource Library",
