@@ -24,7 +24,7 @@ export default function About() {
           <div className="w-full md:w-[400px] flex-shrink-0">
             <div className="aspect-square bg-brand-pink rounded-3xl border-[3px] border-slate-900 shadow-[8px_8px_0_0_#0f172a] overflow-hidden rotate-3 hover:rotate-0 transition-transform duration-300">
               <img 
-                src="/images/alfredo-moresi-profile.jpg" 
+                src="/images/alfredo-morresi-profile.jpg" 
                 alt="Profile" 
                 className="w-full h-full object-cover"
               />
