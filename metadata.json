@@ -1,0 +1,8 @@
+{
+  "name": "Edulogia",
+  "description": "A non-profit educational hub helping parents balance kids' technology use with educational resources.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

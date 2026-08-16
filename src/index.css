@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fredoka", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-yellow: #FFD166; 
+  --color-brand-yellow-dark: #F5B000; 
+  --color-brand-blue: #06D6A0; 
+  --color-brand-blue-dark: #00A878; 
+  --color-brand-pink: #EF476F;
+}
+
+body {
+  @apply bg-white text-slate-900 font-sans antialiased;
+}
+
+/* Playful UI Utilities */
+.chunky-box {
+  @apply border-[3px] border-slate-900 shadow-[4px_4px_0_0_#0f172a] transition-all duration-200;
+}
+
+.chunky-hover {
+  @apply hover:-translate-y-1 hover:shadow-[6px_6px_0_0_#0f172a];
+}
+
+.chunky-btn {
+  @apply border-[3px] border-slate-900 shadow-[4px_4px_0_0_#0f172a] transition-all duration-200 hover:-translate-y-1 hover:shadow-[6px_6px_0_0_#0f172a] font-display font-semibold rounded-2xl active:translate-y-1 active:shadow-none inline-flex items-center justify-center;
+}
+
+.markdown-body h1 {
+  @apply text-3xl font-display font-bold mb-4 mt-8 text-slate-900;
+}
+.markdown-body h2 {
+  @apply text-2xl font-display font-semibold mb-3 mt-6 text-slate-800;
+}
+.markdown-body p {
+  @apply mb-4 leading-relaxed text-slate-700;
+}
+.markdown-body ul {
+  @apply list-disc list-inside mb-4 text-slate-700;
+}
+.markdown-body a {
+  @apply text-brand-blue-dark hover:underline font-medium;
+}

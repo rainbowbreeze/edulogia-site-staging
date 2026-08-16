@@ -1,0 +1,59 @@
+{
+  "layout": {
+    "nav": {
+      "home": "Home",
+      "about": "Chi Siamo",
+      "blog": "Blog",
+      "resources": "Risorse",
+      "get_started": "Inizia ora"
+    },
+    "footer": {
+      "description": "Un'iniziativa no-profit per aiutare i genitori a navigare nel mondo digitale, bilanciando l'uso della tecnologia con pratiche educative sane.",
+      "quick_links": "Link Utili",
+      "blog": "Il nostro Blog",
+      "guides": "Guide Scaricabili",
+      "tutorials": "Tutorial",
+      "connect": "Rimani in contatto",
+      "connect_desc": "Ricevi le ultime risorse e articoli direttamente nella tua casella di posta.",
+      "email_placeholder": "Indirizzo email",
+      "join": "Iscriviti",
+      "copyright": "© {{year}} Edulogia. Tutti i diritti riservati."
+    }
+  },
+  "home": {
+    "hero": {
+      "badge": "Supportiamo le famiglie digitali",
+      "title_balance": "Benvenuti su ",
+      "title_tech": "Edulogia",
+      "title_with": "",
+      "description": "I <strong>genitori</strong> sono gli <strong>educatori più importanti</strong> per i propri figli, ma trovare la <strong>giusta relazione</strong> con il mondo digitale è complesso. Edulogia aiuta a far <strong>funzionare la tecnologia per la tua famiglia</strong>. Forniamo le <strong>guide, i suggerimenti e il supporto</strong> necessari per costruire <strong>sane abitudini digitali</strong> e sfruttare il meglio che la tecnologia ha da offrire.",
+      "explore": "Esplora le Risorse",
+      "read_blog": "Leggi il Blog"
+    },
+    "featured_article": "Articolo in Evidenza",
+    "featured_resource": "Risorsa in Evidenza",
+    "view_all": "Vedi tutti",
+    "read_article": "Leggi l'articolo",
+    "get_it_now": "Scarica ora"
+  },
+  "blog": {
+    "title": "Approfondimenti e Articoli",
+    "description": "Pensieri, ricerche e considerazioni su come crescere bambini alfabetizzati digitalmente in un mondo sempre distratto.",
+    "read_full": "Leggi tutto l'articolo",
+    "newer": "Più recenti",
+    "older": "Più vecchi"
+  },
+  "about": {
+    "title": "Chi Siamo",
+    "intro": "Sono un educatore appassionato e un tecnologo che lavora per colmare il divario tra gli strumenti digitali e un sano sviluppo infantile. Altre storie in arrivo...",
+    "mission_title": "La Nostra Missione",
+    "mission_description": "Fornire ai genitori le conoscenze e gli strumenti necessari per guidare i propri figli in un panorama digitale in rapida evoluzione. Crediamo che la tecnologia debba servire all'educazione e alla connessione, non alla distrazione.",
+    "vision_title": "La Nostra Visione",
+    "vision_description": "Un mondo in cui le famiglie parlano apertamente di tecnologia, creano insieme limiti sani e utilizzano gli strumenti digitali per espandere i propri orizzonti e stimolare la creatività."
+  },
+  "resources": {
+    "title": "Libreria delle Risorse",
+    "description": "Template scaricabili, tutorial interattivi e guide concrete per colmare il divario tra tecnologia ed educazione a casa.",
+    "search_placeholder": "Cerca guide, template, tutorial..."
+  }
+}
