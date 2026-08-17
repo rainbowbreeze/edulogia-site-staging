@@ -122,7 +122,7 @@ export default function Resources() {
       {/* Featured Resources List */}
       {featuredResources.length > 0 && validPage === 1 && (
         <div className="mb-16">
-          <h2 className="text-3xl font-display font-bold text-slate-900 mb-8 border-b-4 border-slate-900 inline-block pb-2">Featured Resources</h2>
+          <h2 className="text-3xl font-display font-bold text-slate-900 mb-8 border-b-4 border-slate-900 inline-block pb-2">{t('resources.featured', 'Featured Resources')}</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredResources.map(renderResourceCard)}
           </div>
@@ -132,7 +132,7 @@ export default function Resources() {
       {/* Regular Resources List */}
       <div>
         {featuredResources.length > 0 && validPage === 1 && (
-          <h2 className="text-3xl font-display font-bold text-slate-900 mb-8 border-b-4 border-slate-900 inline-block pb-2">All Resources</h2>
+          <h2 className="text-3xl font-display font-bold text-slate-900 mb-8 border-b-4 border-slate-900 inline-block pb-2">{t('resources.all', 'All Resources')}</h2>
         )}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {currentResources.map(renderResourceCard)}

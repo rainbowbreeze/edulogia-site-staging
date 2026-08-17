@@ -54,6 +54,8 @@
   "resources": {
     "title": "Libreria delle Risorse",
     "description": "Template scaricabili, tutorial interattivi e guide concrete per colmare il divario tra tecnologia ed educazione a casa.",
-    "search_placeholder": "Cerca guide, template, tutorial..."
+    "search_placeholder": "Cerca guide, template, tutorial...",
+    "featured": "Risorse in evidenza",
+    "all": "Tutte le Risorse"
   }
 }

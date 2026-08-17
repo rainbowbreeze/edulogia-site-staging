@@ -54,6 +54,8 @@
   "resources": {
     "title": "Resource Library",
     "description": "Downloadable templates, interactive tutorials, and concrete guides to bridge the gap between technology and education at home.",
-    "search_placeholder": "Search for guides, templates, tutorials..."
+    "search_placeholder": "Search for guides, templates, tutorials...",
+    "featured": "Featured Resources",
+    "all": "All Resources"
   }
 }
