@@ -1,7 +1,7 @@
 ---
 title: "Google Family Link Guide for Android"
 description: "A practical tutorial on how to set app limits, screen-free time, and school time on your children's Android devices."
-date: "August 17, 2026"
+date: "January 7, 2026"
 tags: ["Family Link", "Android", "Parental Control", "Safety"]
 icon: "Shield"
 resource_url: "https://docs.google.com/document/d/1Z0wsAA_qFRhGX1exKJreC6BoRfKZ8elRH0h6X6zF4lA/edit?usp=drive_link"

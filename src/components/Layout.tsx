@@ -129,8 +129,8 @@ export default function Layout() {
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-6">
-                <div className="bg-brand-yellow p-2 rounded-2xl chunky-box">
-                  <MonitorPlay className="w-6 h-6 text-slate-900" />
+                <div className="bg-brand-yellow p-1 rounded-2xl chunky-box flex items-center justify-center">
+                  <EdulogiaLogo size={36} />
                 </div>
                 <span className="font-display font-bold text-2xl text-white ml-2">Edu<span className="text-brand-pink">logia</span></span>
               </div>

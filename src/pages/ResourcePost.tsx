@@ -51,10 +51,10 @@ export default function ResourcePost() {
               href={resource.resource_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="chunky-btn bg-brand-yellow inline-flex items-center gap-2 text-lg"
+              className="chunky-btn bg-brand-yellow flex justify-center items-center gap-2 text-lg w-full"
             >
               <Download className="w-5 h-5" />
-              {t('home.download_button', 'Download Now')}
+              {t('home.get_it_now', 'Get it Now')}
             </a>
           </div>
         )}
