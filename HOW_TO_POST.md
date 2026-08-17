@@ -14,12 +14,12 @@ Before managing any content, ensure you are working with the correct and most up
 
 ## 1. Blog Posts
 
-Blog posts are Markdown files located in the `src/content/blog/` directory. They are automatically parsed and displayed on the website unless marked as a draft.
+Blog posts are Markdown files located in the `src/content/blog/` directory. They are automatically parsed and displayed on the website based on two frontmatter fields: `draft` and `published`. A post is hidden from the live site if `draft: true` OR `published: false`.
 
 ### How to Create a New Draft Blog Post
 1. Determine the current date and the post's slug.
 2. Use an appropriate file creation tool to generate a new Markdown file using the format: `src/content/blog/YYYYMMDD-slug.[lang].md` (e.g., `.en.md` or `.it.md`). The `YYYYMMDD` prefix is mandatory to keep files organized, and the language suffix is mandatory for localization.
-3. Add the required YAML frontmatter at the top of the file. **Crucially, include `draft: true`** so it does not appear on the live site.
+3. Add the required YAML frontmatter at the top of the file. **Crucially, include `draft: true` and/or `published: false`** so it does not appear on the live site.
 
 **Template:**
 ```yaml
@@ -30,6 +30,7 @@ date: "August 15, 2026"
 category: "Guides"
 imageUrl: "https://images.unsplash.com/..."
 draft: true
+published: false
 ---
 
 # Introduction
@@ -40,14 +41,14 @@ Draft content goes here...
 ### How to Publish an Existing Draft Blog Post
 1. Locate the draft Markdown file in `src/content/blog/`.
 2. Read the file's contents to inspect its current frontmatter.
-3. Edit the file to modify the frontmatter: change `draft: true` to `draft: false` (or remove the `draft` line entirely).
+3. Edit the file to modify the frontmatter: change `draft: true` to `draft: false` (or remove the `draft` line entirely), and ensure `published` is set to `true` (or remove the `published` line entirely). Both conditions must be met for the post to be visible.
 4. Rename or move the file so the `YYYYMMDD` prefix matches the actual publication date. This ensures accurate chronological sorting across paginated views.
 
 ---
 
 ## 2. Resources
 
-Resources are Markdown files located in the `src/content/resources/` directory. They function similarly to blog posts and are displayed in a paginated grid.
+Resources are Markdown files located in the `src/content/resources/` directory. They function similarly to blog posts and are displayed in a paginated grid. Note that unlike Blog Posts, Resources **do not** use the `published` field. Their visibility is controlled entirely by the `draft` field.
 
 ### How to Create a New Draft Resource
 1. Determine the current date and the resource's slug.

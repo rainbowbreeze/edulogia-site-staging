@@ -9,6 +9,7 @@ export type ResourceFrontmatter = {
   resource_url?: string;
   featured?: boolean;
   draft?: boolean;
+  published?: boolean;
 };
 
 export type Resource = ResourceFrontmatter & {
@@ -32,8 +33,8 @@ export function getResources(): Resource[] {
     try {
       const parsed = fm<ResourceFrontmatter>(rawContent);
       
-      // Filter out drafts
-      if (parsed.attributes.draft !== true) {
+      // Filter out drafts or unpublished resources
+      if (parsed.attributes.published !== false && parsed.attributes.draft !== true) {
          resources.push({
            id,
            language,
