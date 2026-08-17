@@ -32,17 +32,6 @@ export default function ResourcePost() {
       </Link>
 
       <article className="bg-white rounded-3xl chunky-box p-8 md:p-12 mb-16">
-        <div className="flex items-center gap-3 text-sm font-bold font-display uppercase tracking-wider text-slate-800 mb-6 flex-wrap">
-          {resource.tags?.map(tag => (
-            <span key={tag} className="bg-brand-pink border-2 border-slate-900 px-3 py-1 rounded-full">
-              {tag}
-            </span>
-          ))}
-          <span className="flex items-center gap-1 bg-slate-100 border-2 border-slate-900 px-3 py-1 rounded-full">
-            <Calendar className="w-4 h-4" /> {resource.date}
-          </span>
-        </div>
-
         <div className="flex items-center gap-4 mb-8">
           <div className="w-16 h-16 bg-brand-blue border-3 border-slate-900 rounded-2xl flex items-center justify-center shadow-[4px_4px_0_0_#0f172a] shrink-0">
             <IconComponent className="w-8 h-8 text-slate-900" />
@@ -73,6 +62,14 @@ export default function ResourcePost() {
         <div className="markdown-body font-sans text-lg text-slate-800 leading-relaxed [&>h1]:text-4xl [&>h1]:font-display [&>h1]:font-bold [&>h1]:mb-6 [&>h1]:mt-10 [&>h2]:text-3xl [&>h2]:font-display [&>h2]:font-bold [&>h2]:mb-4 [&>h2]:mt-8 [&>p]:mb-6 [&>ul]:list-disc [&>ul]:ml-6 [&>ul]:mb-6 [&>ul>li]:mb-2 [&>a]:text-brand-blue [&>a]:font-bold [&>a]:underline">
           <Markdown>{resource.body}</Markdown>
         </div>
+
+        {resource.tags && resource.tags.length > 0 && (
+          <div className="mt-12 pt-8 border-t-[3px] border-slate-100 flex items-center flex-wrap gap-2">
+            {resource.tags.map(tag => (
+              <span key={tag} className="text-xs font-bold text-slate-600 uppercase tracking-wider font-display">#{tag}</span>
+            ))}
+          </div>
+        )}
       </article>
     </div>
   );
