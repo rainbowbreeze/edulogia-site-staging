@@ -41,7 +41,8 @@
     "description": "Thoughts, research, and considerations on raising tech-literate kids in a distracted world.",
     "read_full": "Read full article",
     "newer": "Newer",
-    "older": "Older"
+    "older": "Older",
+    "back": "Back to Blog"
   },
   "about": {
     "title": "About me",
@@ -56,6 +57,7 @@
     "description": "Downloadable templates, interactive tutorials, and concrete guides to bridge the gap between technology and education at home.",
     "search_placeholder": "Search for guides, templates, tutorials...",
     "featured": "Featured Resources",
-    "all": "All Resources"
+    "all": "All Resources",
+    "read_all": "Read all"
   }
 }

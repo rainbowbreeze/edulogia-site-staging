@@ -5,6 +5,7 @@ import About from './pages/About';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Resources from './pages/Resources';
+import ResourcePost from './pages/ResourcePost';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="blog" element={<Blog />} />
           <Route path="blog/:id" element={<BlogPost />} />
           <Route path="resources" element={<Resources />} />
+          <Route path="resources/:id" element={<ResourcePost />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { getResources } from '../lib/resources';
-import { Download, FileText, Shield, Gamepad2, Search, ArrowLeft, ArrowRight } from 'lucide-react';
+import { Download, FileText, Shield, Gamepad2, Search, ArrowLeft, ArrowRight, ArrowRightCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, useNavigate } from 'react-router-dom';
 
 const icons: Record<string, React.ElementType> = {
   FileText,
@@ -14,6 +14,7 @@ export default function Resources() {
   const { t, i18n } = useTranslation();
   const [searchParams, setSearchParams] = useSearchParams();
   const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
   
   const currentLang = i18n.resolvedLanguage || 'it';
   const allResources = getResources().filter(r => r.language === currentLang);
@@ -58,33 +59,39 @@ export default function Resources() {
   const renderResourceCard = (resource: any) => {
     const IconComponent = icons[resource.icon] || FileText;
     return (
-      <div key={resource.id} className="bg-white rounded-3xl chunky-box chunky-hover p-8 flex flex-col group cursor-pointer">
+      <div onClick={() => navigate(`/resources/${resource.id}`)} key={resource.id} className="bg-white rounded-3xl chunky-box chunky-hover p-8 flex flex-col group cursor-pointer">
         <div className="flex items-start mb-6">
           <div className="bg-brand-yellow p-4 rounded-2xl border-2 border-slate-900 shadow-[2px_2px_0_0_#0f172a]">
             <IconComponent className="w-8 h-8 text-slate-900" />
           </div>
         </div>
         
-        <h3 className="text-2xl font-display font-bold text-slate-900 mb-4">{resource.title}</h3>
+        <h3 className="text-2xl font-display font-bold text-slate-900 mb-4 group-hover:text-brand-pink transition-colors">{resource.title}</h3>
         <p className="text-slate-700 font-medium mb-8 flex-grow text-lg">{resource.description}</p>
         
-        <div className="flex items-center justify-between mt-auto pt-6 border-t-[3px] border-slate-100">
+        <div className="flex flex-col gap-4 mt-auto">
           <div className="flex items-center gap-2">
             {resource.tags && resource.tags.map((tag: string) => (
               <span key={tag} className="text-xs font-bold text-slate-600 uppercase tracking-wider font-display">#{tag}</span>
             ))}
           </div>
-          {resource.resource_url && (
-            <a 
-              href={resource.resource_url} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center justify-center p-3 rounded-xl border-2 border-slate-900 bg-brand-blue text-slate-900 group-hover:bg-brand-pink transition-colors"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <Download className="w-5 h-5" />
-            </a>
-          )}
+
+          <div className="flex items-center justify-between pt-6 border-t-[3px] border-slate-100">
+            <span className="font-display font-bold text-slate-900 uppercase tracking-wider text-sm group-hover:text-brand-pink transition-colors inline-flex items-center gap-2">
+              {t('resources.read_all', 'Read all')} <ArrowRightCircle className="w-5 h-5" />
+            </span>
+            {resource.resource_url && (
+              <a 
+                href={resource.resource_url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center p-3 rounded-xl border-2 border-slate-900 bg-brand-blue text-slate-900 hover:bg-brand-pink transition-colors"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Download className="w-5 h-5" />
+              </a>
+            )}
+          </div>
         </div>
       </div>
     );

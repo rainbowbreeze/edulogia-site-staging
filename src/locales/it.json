@@ -41,7 +41,8 @@
     "description": "Pensieri, ricerche e considerazioni su come crescere bambini alfabetizzati digitalmente in un mondo sempre distratto.",
     "read_full": "Leggi tutto l'articolo",
     "newer": "Più recenti",
-    "older": "Più vecchi"
+    "older": "Più vecchi",
+    "back": "Torna al Blog"
   },
   "about": {
     "title": "Chi Sono",
@@ -56,6 +57,7 @@
     "description": "Template scaricabili, tutorial interattivi e guide concrete per colmare il divario tra tecnologia ed educazione a casa.",
     "search_placeholder": "Cerca guide, template, tutorial...",
     "featured": "Risorse in evidenza",
-    "all": "Tutte le Risorse"
+    "all": "Tutte le Risorse",
+    "read_all": "Leggi tutto"
   }
 }

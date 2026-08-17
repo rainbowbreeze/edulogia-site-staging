@@ -5,6 +5,7 @@ export type BlogPostFrontmatter = {
   excerpt: string;
   date: string;
   category: string;
+  tags?: string[];
   imageUrl: string;
   published?: boolean;
   draft?: boolean;

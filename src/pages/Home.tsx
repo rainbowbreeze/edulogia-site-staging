@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, BookOpen, Download, Shield, Sparkles } from 'lucide-react';
+import { ArrowRight, BookOpen, Download, Shield, Sparkles, ArrowRightCircle, Calendar } from 'lucide-react';
 import { getBlogPosts } from '../lib/blog';
 import { getResources } from '../lib/resources';
 import { useTranslation } from 'react-i18next';
@@ -65,7 +65,7 @@ export default function Home() {
               </Link>
             </div>
             
-            <Link to={featuredBlog ? `/blog/${featuredBlog.id}` : "/blog"} className="rounded-3xl bg-white chunky-box chunky-hover overflow-hidden flex flex-col h-full">
+            <Link to={featuredBlog ? `/blog/${featuredBlog.id}` : "/blog"} className="rounded-3xl bg-white chunky-box chunky-hover overflow-hidden flex flex-col h-full group cursor-pointer">
               {featuredBlog && (
                 <>
                   <div className="border-b-[3px] border-slate-900">
@@ -76,18 +76,31 @@ export default function Home() {
                     />
                   </div>
                   <div className="p-8 flex flex-col flex-grow">
-                    <div className="flex items-center gap-4 text-xs font-bold text-slate-800 font-display mb-4 uppercase tracking-wider">
-                      <span className="bg-brand-yellow border-2 border-slate-900 px-3 py-1 rounded-full">{featuredBlog.category}</span>
-                    </div>
                     <h3 className="text-2xl font-bold font-display text-slate-900 mb-4 group-hover:text-brand-pink transition-colors">
                       {featuredBlog.title}
                     </h3>
+                    <div className="flex items-center gap-4 text-xs font-bold text-slate-800 font-display mb-4 uppercase tracking-wider">
+                      <span className="flex items-center gap-1 bg-slate-100 border-2 border-slate-900 px-3 py-1 rounded-full"><Calendar className="w-3 h-3" /> {featuredBlog.date}</span>
+                    </div>
                     <p className="text-slate-700 font-medium mb-8 leading-relaxed flex-grow">
                       {featuredBlog.excerpt}
                     </p>
-                    <span className="text-slate-900 font-bold font-display inline-flex items-center gap-2 px-6 py-3 border-2 border-slate-900 rounded-xl bg-brand-blue w-fit">
-                      {t('home.read_article')} <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </span>
+                    <div className="flex flex-col gap-4 mt-auto">
+                      <div className="flex items-center flex-wrap gap-2">
+                        {(featuredBlog.tags && featuredBlog.tags.length > 0) ? (
+                          featuredBlog.tags.map((tag: string) => (
+                            <span key={tag} className="text-xs font-bold text-slate-600 uppercase tracking-wider font-display">#{tag}</span>
+                          ))
+                        ) : (
+                          <span className="text-xs font-bold text-slate-600 uppercase tracking-wider font-display">#{featuredBlog.category}</span>
+                        )}
+                      </div>
+                      <div className="flex items-center justify-between pt-6 border-t-[3px] border-slate-100">
+                        <span className="font-display font-bold text-slate-900 uppercase tracking-wider text-sm group-hover:text-brand-pink transition-colors inline-flex items-center gap-2">
+                          {t('home.read_article')} <ArrowRightCircle className="w-5 h-5" />
+                        </span>
+                      </div>
+                    </div>
                   </div>
                 </>
               )}

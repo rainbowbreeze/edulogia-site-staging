@@ -1,5 +1,5 @@
 import { getBlogPosts } from '../lib/blog';
-import { Calendar, Clock, ArrowRight, ArrowLeft } from 'lucide-react';
+import { Calendar, Clock, ArrowRight, ArrowLeft, ArrowRightCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Link, useSearchParams } from 'react-router-dom';
 
@@ -45,7 +45,7 @@ export default function Blog() {
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
         {currentPosts.map((post) => (
-          <article key={post.id} className="bg-white rounded-3xl chunky-box chunky-hover overflow-hidden group flex flex-col">
+          <Link to={`/blog/${post.id}`} key={post.id} className="bg-white rounded-3xl chunky-box chunky-hover overflow-hidden group flex flex-col cursor-pointer">
             <div className="border-b-[3px] border-slate-900 overflow-hidden">
               <img 
                 src={post.imageUrl} 
@@ -54,21 +54,36 @@ export default function Blog() {
               />
             </div>
             <div className="p-8 flex flex-col flex-grow">
-              <div className="flex items-center gap-3 text-xs font-bold font-display uppercase tracking-wider text-slate-800 mb-6">
-                <span className="bg-brand-blue border-2 border-slate-900 px-3 py-1 rounded-full">{post.category}</span>
-                <span className="flex items-center gap-1 bg-slate-100 border-2 border-slate-900 px-3 py-1 rounded-full"><Calendar className="w-3 h-3" /> {post.date}</span>
-              </div>
               <h2 className="text-2xl font-display font-bold text-slate-900 mb-4 line-clamp-2 group-hover:text-brand-pink transition-colors">
                 {post.title}
               </h2>
+
+              <div className="flex items-center gap-3 text-xs font-bold font-display uppercase tracking-wider text-slate-800 mb-6">
+                <span className="flex items-center gap-1 bg-slate-100 border-2 border-slate-900 px-3 py-1 rounded-full"><Calendar className="w-3 h-3" /> {post.date}</span>
+              </div>
+              
               <p className="text-slate-700 font-medium mb-8 flex-grow line-clamp-3 text-lg">
                 {post.excerpt}
               </p>
-              <Link to={`/blog/${post.id}`} className="text-slate-900 font-bold font-display inline-flex items-center justify-center gap-2 mt-auto w-full border-2 border-slate-900 bg-brand-yellow py-3 rounded-xl hover:bg-yellow-400 transition-colors">
-                {t('blog.read_full')} <ArrowRight className="w-5 h-5" />
-              </Link>
+              
+              <div className="flex flex-col gap-4 mt-auto">
+                <div className="flex items-center flex-wrap gap-2">
+                  {(post.tags && post.tags.length > 0) ? (
+                    post.tags.map((tag: string) => (
+                      <span key={tag} className="text-xs font-bold text-slate-600 uppercase tracking-wider font-display">#{tag}</span>
+                    ))
+                  ) : (
+                    <span className="text-xs font-bold text-slate-600 uppercase tracking-wider font-display">#{post.category}</span>
+                  )}
+                </div>
+                <div className="flex items-center justify-between pt-6 border-t-[3px] border-slate-100">
+                  <span className="font-display font-bold text-slate-900 uppercase tracking-wider text-sm group-hover:text-brand-pink transition-colors inline-flex items-center gap-2">
+                    {t('blog.read_full')} <ArrowRightCircle className="w-5 h-5" />
+                  </span>
+                </div>
+              </div>
             </div>
-          </article>
+          </Link>
         ))}
       </div>
 
