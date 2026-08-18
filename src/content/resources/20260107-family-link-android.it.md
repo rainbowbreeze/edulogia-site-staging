@@ -1,7 +1,8 @@
 ---
 title: "Guida a Google Family Link per Android"
+slug: "family-link-android-guide"
 description: "Un tutorial pratico su come impostare limiti di utilizzo, tempo senza schermo e orario scolastico sui dispositivi Android dei propri figli."
-date: "January 7, 2026"
+date: "2026-08-17"
 tags: ["Family Link", "Android", "Parental Control"]
 icon: "Shield"
 resource_url: "https://docs.google.com/document/d/1Z0wsAA_qFRhGX1exKJreC6BoRfKZ8elRH0h6X6zF4lA/edit?usp=drive_link"

@@ -26,8 +26,9 @@ Blog posts are Markdown files located in the `src/content/blog/` directory. They
 ---
 title: "Your Draft Title | Titolo della Bozza"
 excerpt: "A brief summary of the post. Breve riassunto del post."
-date: "August 15, 2026"
-category: "Guides"
+date: "2026-08-15"
+slug: "my-custom-url-slug"
+tags: ["Guides"]
 imageUrl: "https://images.unsplash.com/..."
 draft: true
 published: false
@@ -37,6 +38,8 @@ published: false
 Draft content goes here...
 ```
 *(Note: Edulogia serves an international audience, so providing bilingual English/Italian titles and excerpts is encouraged when requested).*
+
+* **`slug`**: (Optional) A custom string used as the URL path (e.g. `my-custom-url-slug`). If omitted, the URL will be generated automatically based on the filename (e.g., `20260815-slug`).
 
 ### How to Publish an Existing Draft Blog Post
 1. Locate the draft Markdown file in `src/content/blog/`.
@@ -60,7 +63,8 @@ Resources are Markdown files located in the `src/content/resources/` directory. 
 ---
 title: "Draft Resource Title"
 description: "Draft description..."
-date: "August 15, 2026"
+date: "2026-08-15"
+slug: "my-custom-url-slug"
 tags: ["Education", "Safety"]
 icon: "FileText"
 resource_url: "https://example.com/download"

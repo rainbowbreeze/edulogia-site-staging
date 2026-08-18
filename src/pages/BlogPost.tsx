@@ -1,6 +1,7 @@
 import { useParams, Navigate, Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
 import { getBlogPosts } from '../lib/blog';
+import { formatDate } from '../lib/utils';
 import { Calendar, Clock, ArrowLeft } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -29,7 +30,7 @@ export default function BlogPost() {
 
         <div className="flex items-center gap-3 text-sm font-bold font-display uppercase tracking-wider text-slate-800 mb-8 flex-wrap">
           <span className="flex items-center gap-1 bg-slate-100 border-2 border-slate-900 px-3 py-1 rounded-full">
-            <Calendar className="w-4 h-4" /> {post.date}
+            <Calendar className="w-4 h-4" /> {formatDate(post.date, currentLang)}
           </span>
         </div>
 
@@ -47,13 +48,9 @@ export default function BlogPost() {
         </div>
 
         <div className="mt-12 pt-8 border-t-[3px] border-slate-100 flex items-center flex-wrap gap-2">
-          {(post.tags && post.tags.length > 0) ? (
-            post.tags.map(tag => (
-              <span key={tag} className="text-xs font-bold text-slate-600 uppercase tracking-wider font-display">#{tag}</span>
-            ))
-          ) : (
-            <span className="text-xs font-bold text-slate-600 uppercase tracking-wider font-display">#{post.category}</span>
-          )}
+          {post.tags && post.tags.length > 0 && post.tags.map(tag => (
+            <span key={tag} className="text-xs font-bold text-slate-600 uppercase tracking-wider font-display">#{tag}</span>
+          ))}
         </div>
       </article>
     </div>

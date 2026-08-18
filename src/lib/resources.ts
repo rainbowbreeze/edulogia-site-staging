@@ -10,6 +10,7 @@ export type ResourceFrontmatter = {
   featured?: boolean;
   draft?: boolean;
   published?: boolean;
+  slug?: string;
 };
 
 export type Resource = ResourceFrontmatter & {
@@ -27,16 +28,16 @@ export function getResources(): Resource[] {
     const rawContent = (files[path] as any).default as string;
     const match = path.match(/\/([^\/]+)\.([a-z]{2})\.md$/);
     
-    const id = match ? match[1] : path.replace(/^.*[\\\/]/, '').replace(/\.md$/, '');
+    const fileId = match ? match[1] : path.replace(/^.*[\\\/]/, '').replace(/\.md$/, '');
     const language = match ? match[2] : 'en';
     
     try {
       const parsed = fm<ResourceFrontmatter>(rawContent);
       
       // Filter out drafts or unpublished resources
-      if (parsed.attributes.published !== false && parsed.attributes.draft !== true) {
+      if (parsed.attributes.published !== false && parsed.attributes.draft !== true) { 
          resources.push({
-           id,
+           id: parsed.attributes.slug || fileId,
            language,
            body: parsed.body,
            ...parsed.attributes,

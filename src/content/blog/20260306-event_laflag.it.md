@@ -1,0 +1,26 @@
+---
+title: "Freedom, Control and Trust in the digital world - La Flag School"
+slug: "event-parental-control-laflag-2026"
+excerpt: "Il mio primo incontro in una scuola sull'importanza di educare i figli a un approccio consapevole e legale al digitale, e sul come farlo. Abbiamo anche parlato di come, grazie al rispetto dei limiti di età imposti dalle app, ad accordi tra genitori e ad un dialogo costante, si riesce meglio a gestire il senso di esclusione dei ragazzi quando altre famiglie fanno scelte meno consapevoli delle nostre sul'uso di questi strumenti.
+
+
+Controllo Parentale nell'Era Digitale: Una Riflessione Condivisa tra Scuola, Genitori e Studenti"
+date: "2026-03-06"
+tags: ["Eventi", "Parental Control", "Scuole"]
+imageUrl: "/images/20260306-event_laflag-02.jpg"
+published: true
+draft: false
+---
+
+Ufficialmente, il mio primo evento in una scuola. Ufficiosamente, una collaborazione iniziata più di un anno fa che ha mi ha portato a parlare con diverse famiglie degli ultimi anni della scuola primaria e secondaria di quanto sia importante trovare un giusto approccio a come scegliamo di far vivere il digitale e la tecnologia ai nostri figli.
+
+Alcune considerazioni, che sono poi stata anche al centro nel mio intervento:
+- **Educare alla legalità**: Molte piattaforme di messaggistica e social network (*tipo Whatsapp, Instagram e TikTok*) hanno dei Termini di servizio molto chiari, che ne vietano esplicitamente l'uso al di sotto dei 13 anni. Dire a nostro figlio di 11 anni che non può ancora usare Whatsapp non significa essere dei cattivi genitori. Significa in primis **avere il coraggio di educare i propri figli alla legatità**, spiegando loro che non è giusto far finta che un divieto chiaro ed esplicito non esista, semplicemente "perchè comunque lo fanno tutti". 
+- Un **accordo tra famiglie** rende tutto più accettabile: Se tra famiglie, soprattutto all'interno della stessa classe, non c'è un accordo per cui "quello che i nostri figli si vogliono dire, se lo dicono in classe, oppure telefonandosi", è normale che soluzioni alternative alla comunicazione, come Whatsapp o le chat private dei social network, prendano piede. Rendendo poi estremamente difficile la gestione caso per caso. Quando invece come genitori rispondiamo ai nostri figli con "*Noi e le altre famiglie abbiamo deciso che non serve usare il cellulare per mandarvi dei messaggi tra compagni di classe*", da divieto si trasforma in "un accordo che i nostri genitori hanno preso". Che sicuramente non piacerà ai nostri figli, ma che rimane comunque molto più digeribile, perchè tutti i ragazzi si trovano nella stessa situazione, e nessuno si sente l'unico escluso.
+- **Si rischia l'esclusione. Ma non è così grave come sembra**: è davvero raro che tutti i genitori di un gruppo classe la vedano nello stesso modo rispetto a come fare accedere i propri figli al digitale, e trovino un comune accordo. Ogni famiglia ha le sue esigenze, e ogni genitore ha la sua visione. Immancabilmente ci saranno degli approcci più permissivi, ed altri meno. Ed i figli nel gruppo dei "meno permissivi" si sentiranno esclusi rispetto agli altri. Vero, e come genitori dobbiamo accettare questa realtà. L'importante è continuare a parlare con loro rispetto a da che cosa si sentono realmente esclusi, sui veri effetti di questa esclusione, se ci sono delle alternative, se c'è un "punto comune" che si può trovare. Spesso, grazie a questo dialogo costante, le conseguenze percepite dai nostri di questa differenza tra gruppi verranno molto ridimensionate. Ma è un approccio che richiede tempo, impegno ed apertura mentale dei genitori.  
+- Come genitori ci preoccupiamo dei **pericoli remoti e improbabili, ma non di quelli vicini e concreti**: diversi genitori danno il cellulare ai propri figli "per sapere dove sono e per poterli chiamare se serve". E fanno questo lasciando un accesso totale e incondizionato sia al cellulare, che ad Internet. Spesso la paura di eventuali pericoli remoti ci porta a fare scelte che hanno delle conseguenze negative e concrete ogni singolo giorno. E' difficile gestire questa irrazionalità ancestrale, ma occorre farlo.
+- [Usare gli strumenti di controllo parentale nel modo corretto](/resources/family-link-android-guide) crea delle **importanti occasioni di dialogo tra genitori e figli** su come decidere, assieme, di esplorare il digitale. Questa conoscenza non è immediatamente disponibile, ma una volta configurato Family Link, il resto delle impostazioni può essere affrontato gradualmente e iterativamente.
+
+In questa cornice, la sottoscrizione di un [Patto Digitale](https://pattidigitali.it/fai-un-patto/) tra le famiglie è un altro strumento di supporto molto valido. Inoltre, una scuola come La Flag che aderisce alla rete dei [Patti Digitali Pavesi](https://www.facebook.com/p/Patti-Digitali-Pavesi-61559655394908/) fornisce un positivo esempio che le famiglie possono scegliere di seguire. 
+
+Più informazioni nel sito [La Flag School](https://laflag.it/evento/la-flag-school-controllo-parentale-nellera-digitale-una-riflessione-condivisa-tra-scuola-genitori-e-studenti/).

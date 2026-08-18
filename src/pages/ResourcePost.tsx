@@ -1,6 +1,7 @@
 import { useParams, Navigate, Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
 import { getResources } from '../lib/resources';
+import { formatDate } from '../lib/utils';
 import { Calendar, ArrowLeft, Download, FileText, Shield, Gamepad2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -41,6 +42,11 @@ export default function ResourcePost() {
           </h1>
         </div>
 
+        <div className="flex items-center gap-3 text-sm font-bold font-display uppercase tracking-wider text-slate-800 mb-8 flex-wrap">
+          <span className="flex items-center gap-1 bg-slate-100 border-2 border-slate-900 px-3 py-1 rounded-full">
+            <Calendar className="w-4 h-4" /> {formatDate(resource.date, currentLang)}
+          </span>
+        </div>
         <p className="text-xl text-slate-600 mb-8 font-sans leading-relaxed">
           {resource.description}
         </p>

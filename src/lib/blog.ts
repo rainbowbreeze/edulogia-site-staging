@@ -4,11 +4,11 @@ export type BlogPostFrontmatter = {
   title: string;
   excerpt: string;
   date: string;
-  category: string;
   tags?: string[];
   imageUrl: string;
   published?: boolean;
   draft?: boolean;
+  slug?: string;
 };
 
 export type BlogPost = BlogPostFrontmatter & {
@@ -31,16 +31,16 @@ export function getBlogPosts(): BlogPost[] {
     const match = path.match(/\/([^\/]+)\.([a-z]{2})\.md$/);
     
     // If it doesn't match the new pattern, you can gracefully fallback or skip
-    const id = match ? match[1] : path.replace(/^.*[\\\/]/, '').replace(/\.md$/, '');
+    const fileId = match ? match[1] : path.replace(/^.*[\\\/]/, '').replace(/\.md$/, '');
     const language = match ? match[2] : 'en'; // default to english if no suffix
     
     try {
       const parsed = fm<BlogPostFrontmatter>(rawContent);
       
       // Filter out drafts or unpublished posts
-      if (parsed.attributes.published !== false && parsed.attributes.draft !== true) {
+      if (parsed.attributes.published !== false && parsed.attributes.draft !== true) { 
          posts.push({
-           id,
+           id: parsed.attributes.slug || fileId,
            language,
            body: parsed.body,
            ...parsed.attributes,

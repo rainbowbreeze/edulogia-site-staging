@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { getResources } from '../lib/resources';
-import { Download, FileText, Shield, Gamepad2, Search, ArrowLeft, ArrowRight, ArrowRightCircle } from 'lucide-react';
+import { formatDate } from '../lib/utils';
+import { Download, FileText, Shield, Gamepad2, Search, ArrowLeft, ArrowRight, ArrowRightCircle, Calendar } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 
@@ -67,6 +68,11 @@ export default function Resources() {
         </div>
         
         <h3 className="text-2xl font-display font-bold text-slate-900 mb-4 group-hover:text-brand-pink transition-colors">{resource.title}</h3>
+        
+        <div className="flex items-center gap-3 text-xs font-bold font-display uppercase tracking-wider text-slate-800 mb-4">
+          <span className="flex items-center gap-1 bg-slate-100 border-2 border-slate-900 px-3 py-1 rounded-full"><Calendar className="w-3 h-3" /> {formatDate(resource.date, currentLang)}</span>
+        </div>
+
         <p className="text-slate-700 font-medium mb-8 flex-grow text-lg">{resource.description}</p>
         
         <div className="flex flex-col gap-4 mt-auto">
