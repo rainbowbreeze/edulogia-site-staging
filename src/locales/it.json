@@ -17,7 +17,7 @@
       "connect_desc": "Ricevi le ultime risorse e articoli direttamente nella tua casella di posta.",
       "email_placeholder": "Indirizzo email",
       "join": "Iscriviti",
-      "copyright": "© {{year}} Edulogia. Tutti i diritti riservati."
+      "copyright": "© {{year}} Edulogia. I contenuti del sito sono rilasciati sotto licenza Creative Commons 4.0 by Attribution."
     }
   },
   "home": {
@@ -38,7 +38,7 @@
   },
   "blog": {
     "title": "Approfondimenti e Articoli",
-    "description": "Pensieri, ricerche e considerazioni su come crescere bambini alfabetizzati digitalmente in un mondo sempre distratto.",
+    "description": "Pensieri e considerazioni su come educare bambini e adolescenti all'uso consapevole del digitale e della tecnologia.",
     "read_full": "Leggi tutto l'articolo",
     "newer": "Più recenti",
     "older": "Più vecchi",
@@ -54,7 +54,7 @@
   },
   "resources": {
     "title": "Libreria delle Risorse",
-    "description": "Template scaricabili, tutorial interattivi e guide concrete per colmare il divario tra tecnologia ed educazione a casa.",
+    "description": "Guide passo-passo e tutorial dettagliati per configurare al meglio cellulari ed applicazioni per aiutare i nostri figli a costruire sane abitudini digitali.",
     "search_placeholder": "Cerca guide, template, tutorial...",
     "featured": "Risorse in evidenza",
     "all": "Tutte le Risorse",

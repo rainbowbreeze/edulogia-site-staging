@@ -17,7 +17,7 @@
       "connect_desc": "Get the latest resources and articles sent to your inbox.",
       "email_placeholder": "Email address",
       "join": "Join",
-      "copyright": "© {{year}} Edulogia. All rights reserved."
+      "copyright": "© {{year}} Edulogia. Site content is licensed under Creative Commons 4.0 by Attribution."
     }
   },
   "home": {
@@ -38,7 +38,7 @@
   },
   "blog": {
     "title": "Insights & Articles",
-    "description": "Thoughts, research, and considerations on raising tech-literate kids in a distracted world.",
+    "description": "Thoughts and considerations on how to educate children and teenagers in the conscious use of digital technology.",
     "read_full": "Read full article",
     "newer": "Newer",
     "older": "Older",
@@ -54,7 +54,7 @@
   },
   "resources": {
     "title": "Resource Library",
-    "description": "Downloadable templates, interactive tutorials, and concrete guides to bridge the gap between technology and education at home.",
+    "description": "Step-by-step guides and detailed tutorials to best configure cell phones and applications to help our children build healthy digital habits.",
     "search_placeholder": "Search for guides, templates, tutorials...",
     "featured": "Featured Resources",
     "all": "All Resources",

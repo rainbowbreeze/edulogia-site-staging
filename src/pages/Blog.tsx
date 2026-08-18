@@ -38,7 +38,7 @@ export default function Blog() {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="mb-16">
         <h1 className="text-5xl md:text-6xl font-display font-bold text-slate-900 mb-6">{t('blog.title')}</h1>
-        <p className="text-2xl text-slate-700 font-medium max-w-2xl font-sans">
+        <p className="text-2xl text-slate-700 font-medium font-sans">
           {t('blog.description')}
         </p>
       </div>
