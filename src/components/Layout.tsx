@@ -147,20 +147,20 @@ export default function Layout() {
             </div>
             <div>
               <h3 className="font-bold text-white mb-4">{t('layout.footer.connect')}</h3>
-              <div className="flex flex-col gap-3">
-                <div className="inline-flex items-center gap-3 bg-slate-800 border-2 border-slate-700 rounded-xl px-4 py-3 w-full">
-                  <Mail className="w-5 h-5 text-brand-pink" />
-                  <a href="mailto:edulogia@googlegroups.com" className="text-slate-200 hover:text-brand-yellow transition-colors font-medium text-sm">
+              <ul className="space-y-2 text-sm">
+                <li className="flex items-center gap-2">
+                  <Mail className="w-4 h-4 text-brand-pink" />
+                  <a href="mailto:edulogia@googlegroups.com" className="hover:text-brand-yellow transition-colors">
                     edulogia@googlegroups.com
                   </a>
-                </div>
-                <div className="inline-flex items-center gap-3 bg-slate-800 border-2 border-slate-700 rounded-xl px-4 py-3 w-full">
-                  <img src="/assets/linkedin_icon.svg" alt="LinkedIn" className="w-5 h-5 rounded-sm" />
-                  <a href="https://www.linkedin.com/company/edulogia-it" target="_blank" rel="noopener noreferrer" className="text-slate-200 hover:text-brand-yellow transition-colors font-medium text-sm">
+                </li>
+                <li className="flex items-center gap-2">
+                  <img src="/assets/linkedin_icon.svg" alt="LinkedIn" className="w-4 h-4 rounded-sm" />
+                  <a href="https://www.linkedin.com/company/edulogia-it" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition-colors">
                     LinkedIn
                   </a>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
           <div className="border-t border-slate-800 mt-12 pt-8 text-sm text-center text-slate-500">
