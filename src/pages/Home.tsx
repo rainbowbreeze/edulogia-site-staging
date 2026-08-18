@@ -122,26 +122,42 @@ export default function Home() {
               </Link>
             </div>
             
-            <div className="rounded-3xl bg-brand-yellow chunky-box p-8 h-full flex flex-col justify-center">
-              <div className="bg-white w-20 h-20 rounded-2xl flex items-center justify-center border-[3px] border-slate-900 shadow-[4px_4px_0_0_#0f172a] mb-8 rotate-3">
-                <Download className="w-10 h-10 text-slate-900" />
+            <div className="rounded-3xl bg-brand-yellow chunky-box chunky-hover p-8 flex flex-col h-full group cursor-pointer" onClick={() => window.location.href = `/resources/${featuredResource.id}`}>
+              <div className="flex items-start mb-6">
+                <div className="bg-white w-20 h-20 rounded-2xl flex items-center justify-center border-[3px] border-slate-900 shadow-[4px_4px_0_0_#0f172a] rotate-3">
+                  <Download className="w-10 h-10 text-slate-900" />
+                </div>
               </div>
-              <h3 className="text-4xl font-display font-bold text-slate-900 mb-6">
+              
+              <h3 className="text-3xl font-display font-bold text-slate-900 mb-4 group-hover:text-brand-pink transition-colors">
                 {featuredResource.title}
               </h3>
-              <p className="text-xl text-slate-900 font-medium mb-10 leading-relaxed">
+              <p className="text-slate-900 font-medium mb-8 flex-grow text-lg">
                 {featuredResource.description}
               </p>
               
-              <div className="mt-auto pt-4 flex gap-4">
-                <Link to="/resources" className="bg-white text-slate-900 px-8 py-4 chunky-btn text-lg gap-2">
-                  {t('home.get_it_now')} <Download className="w-5 h-5" />
-                </Link>
-                {featuredResource.resource_url && (
-                  <a href={featuredResource.resource_url} target="_blank" rel="noopener noreferrer" className="bg-brand-blue text-slate-900 px-8 py-4 chunky-btn text-lg gap-2 inline-flex items-center justify-center">
-                    Download <Download className="w-5 h-5" />
-                  </a>
-                )}
+              <div className="flex flex-col gap-4 mt-auto">
+                <div className="flex items-center gap-2">
+                  {featuredResource.tags && featuredResource.tags.map((tag: string) => (
+                    <span key={tag} className="text-xs font-bold text-slate-900 uppercase tracking-wider font-display">#{tag}</span>
+                  ))}
+                </div>
+                <div className="flex items-center justify-between pt-6 border-t-[3px] border-slate-900/10">
+                  <span className="font-display font-bold text-slate-900 uppercase tracking-wider text-sm group-hover:text-brand-pink transition-colors inline-flex items-center gap-2">
+                    {t('resources.read_all', 'Read all')} <ArrowRightCircle className="w-5 h-5" />
+                  </span>
+                  {featuredResource.resource_url && (
+                    <a 
+                      href={featuredResource.resource_url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center p-3 rounded-xl border-2 border-slate-900 bg-brand-blue text-slate-900 hover:bg-brand-pink transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <Download className="w-5 h-5" />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           </div>
