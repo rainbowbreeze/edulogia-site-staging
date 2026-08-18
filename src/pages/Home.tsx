@@ -1,9 +1,17 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, BookOpen, Download, Shield, Sparkles, ArrowRightCircle, Calendar } from 'lucide-react';
+import { ArrowRight, BookOpen, Download, Shield, Sparkles, ArrowRightCircle, Calendar, FileText, Gamepad2, Camera } from 'lucide-react';
 import { getBlogPosts } from '../lib/blog';
 import { getResources } from '../lib/resources';
 import { formatDate } from '../lib/utils';
 import { useTranslation } from 'react-i18next';
+
+const iconMap: Record<string, React.ElementType> = {
+  Download,
+  FileText,
+  Shield,
+  Gamepad2,
+  Camera,
+};
 
 export default function Home() {
   const { t, i18n } = useTranslation();
@@ -124,11 +132,13 @@ export default function Home() {
             </div>
             
             <div className="grid md:grid-cols-2 gap-12">
-              {resources.map(resource => (
+              {resources.map(resource => {
+                const IconComponent = iconMap[resource.icon] || Download;
+                return (
                 <div key={resource.id} className="rounded-3xl bg-brand-yellow chunky-box chunky-hover p-8 flex flex-col h-full group cursor-pointer" onClick={() => window.location.href = `/resources/${resource.id}`}>
                   <div className="flex items-start mb-6 shrink-0">
                     <div className="bg-white w-20 h-20 rounded-2xl flex items-center justify-center border-[3px] border-slate-900 shadow-[4px_4px_0_0_#0f172a] rotate-3">
-                      <Download className="w-10 h-10 text-slate-900" />
+                      <IconComponent className="w-10 h-10 text-slate-900" />
                     </div>
                   </div>
                   
@@ -168,7 +178,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              ))}
+              )})}
             </div>
           </div>
         )}

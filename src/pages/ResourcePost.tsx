@@ -2,14 +2,15 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import Markdown from 'react-markdown';
 import { getResources } from '../lib/resources';
 import { formatDate } from '../lib/utils';
-import { Calendar, ArrowLeft, Download, FileText, Shield, Gamepad2 } from 'lucide-react';
+import { Calendar, ArrowLeft, Download, FileText, Shield, Gamepad2, Camera } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 const iconMap = {
   Download,
   FileText,
   Shield,
-  Gamepad2
+  Gamepad2,
+  Camera
 };
 
 export default function ResourcePost() {

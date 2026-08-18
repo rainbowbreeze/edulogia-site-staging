@@ -51,12 +51,12 @@ Draft content goes here...
 
 ## 2. Resources
 
-Resources are Markdown files located in the `src/content/resources/` directory. They function similarly to blog posts and are displayed in a paginated grid. Note that unlike Blog Posts, Resources **do not** use the `published` field. Their visibility is controlled entirely by the `draft` field.
+Resources are Markdown files located in the `src/content/resources/` directory. They function similarly to blog posts and are displayed in a paginated grid. A resource is hidden from the live site if `draft: true` OR `published: false`.
 
 ### How to Create a New Draft Resource
 1. Determine the current date and the resource's slug.
 2. Use an appropriate file creation tool to generate a new Markdown file using the format: `src/content/resources/YYYYMMDD-slug.[lang].md` (e.g., `.en.md` or `.it.md`).
-3. Add the required YAML frontmatter at the top of the file. **Crucially, include `draft: true`** so it does not appear on the live site.
+3. Add the required YAML frontmatter at the top of the file. **Crucially, include `draft: true` and/or `published: false`** so it does not appear on the live site.
 
 **Template:**
 ```yaml
@@ -70,6 +70,7 @@ icon: "FileText"
 resource_url: "https://example.com/download"
 featured: false
 draft: true
+published: false
 ---
 
 # Resource Details
@@ -77,12 +78,12 @@ Draft content goes here...
 ```
 * **`resource_url`**: If this field is populated with a URL, a prominent "Download" button will automatically render on the resource's card and preview.
 * **`featured`**: Setting this to `true` will pin the resource to the top "Featured Resources" section on the `/resources` page and make it eligible to appear on the Homepage.
-* **`icon`**: Must be one of the mapped Lucide React components (typically `FileText`, `Shield`, `Gamepad2`, or `Download`).
+* **`icon`**: Must be one of the mapped Lucide React components (typically `FileText`, `Shield`, `Gamepad2`, `Download`, or `Camera`). More icons can be used asking the agent to add the specific icon name, using the reference at https://lucide.dev/icons/.
 
 ### How to Publish an Existing Draft Resource
 1. Locate the draft Markdown file in `src/content/resources/`.
 2. Read the file's contents to inspect its current frontmatter.
-3. Edit the file to modify the frontmatter: change `draft: true` to `draft: false` (or remove the `draft` line).
+3. Edit the file to modify the frontmatter: change `draft: true` to `draft: false` (or remove the `draft` line entirely), and ensure `published` is set to `true` (or remove the `published` line entirely). Both conditions must be met for the resource to be visible.
 4. If necessary, rename or move the file so the `YYYYMMDD` prefix matches the actual publication date.
 
 ---

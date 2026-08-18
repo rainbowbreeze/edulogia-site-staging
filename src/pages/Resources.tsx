@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { getResources } from '../lib/resources';
 import { formatDate } from '../lib/utils';
-import { Download, FileText, Shield, Gamepad2, Search, ArrowLeft, ArrowRight, ArrowRightCircle, Calendar } from 'lucide-react';
+import { Download, FileText, Shield, Gamepad2, Search, ArrowLeft, ArrowRight, ArrowRightCircle, Calendar, Camera } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 
@@ -9,6 +9,8 @@ const icons: Record<string, React.ElementType> = {
   FileText,
   Shield,
   Gamepad2,
+  Download,
+  Camera,
 };
 
 export default function Resources() {
