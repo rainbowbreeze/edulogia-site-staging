@@ -17,8 +17,8 @@ This guide provides a comprehensive overview of how to manage and configure your
 ## What you will learn in this guide:
 
 * **Setup & Installation:** How to set up Family Link on a child's Android device.
+* **Scheduling:** Configuring "School time" or downtime schedules to minimize distractions during study or rest hours.
 * **Screen Time Limits:** Setting daily screen time limits and appropriate bedtimes to ensure healthy usage.
+* **Monitoring:** Monitoring app usage activity and understanding how your child spends their time on the device.
 * **App Management:** Managing app approvals, setting specific time limits per app, and blocking inappropriate content.
 * **Location Tracking:** How to track the device's location to ensure your child's safety.
-* **Scheduling:** Configuring "School time" or downtime schedules to minimize distractions during study or rest hours.
-* **Monitoring:** Monitoring app usage activity and understanding how your child spends their time on the device.

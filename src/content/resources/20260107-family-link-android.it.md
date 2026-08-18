@@ -18,7 +18,7 @@ Questa guida fornisce una panoramica completa su come gestire e configurare il d
 
 * **Configurazione e Installazione:** Come impostare Family Link sul dispositivo Android di un figlio.
 * **Limiti di Tempo di Utilizzo:** Impostare limiti di tempo giornalieri e l'ora del riposo (bedtime) per garantire un uso sano.
-* **Gestione delle App:** Gestire le approvazioni delle app, impostare limiti di tempo specifici per ogni app e bloccare i contenuti inappropriati.
-* **Localizzazione:** Come localizzare la posizione del dispositivo per garantire la sicurezza.
 * **Pianificazione Oraria:** Configurare l'orario scolastico o i periodi di pausa (downtime) per ridurre le distrazioni durante lo studio o il riposo.
 * **Monitoraggio:** Monitorare le attività e l'utilizzo delle applicazioni per capire come tuo figlio trascorre il tempo sul dispositivo.
+* **Gestione delle App:** Gestire le approvazioni delle app, impostare limiti di tempo specifici per ogni app e bloccare i contenuti inappropriati.
+* **Localizzazione:** Come localizzare la posizione del dispositivo per garantire la sicurezza.

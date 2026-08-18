@@ -3,7 +3,7 @@ title: "Perché Edulogia?"
 excerpt: "I motivi dietro al lancio questo progetto. Per EDUcate alla tecnoLOGIA. Insieme."
 date: "2026-01-07"
 tags: ["Riflessioni"]
-imageUrl: "https://images.unsplash.com/photo-1617802690992-15d93263d3a9?auto=format&fit=crop&q=80&w=800&h=500"
+imageUrl: "/images/20260107-edulogia_launch.png"
 published: true
 draft: false
 ---
