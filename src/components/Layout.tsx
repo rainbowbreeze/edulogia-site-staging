@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { MonitorPlay, Home, FileText, Menu, X, Globe, Sparkles } from 'lucide-react';
+import { MonitorPlay, Home, FileText, Menu, X, Globe, Sparkles, Mail } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import EdulogiaLogo from './EdulogiaLogo';
@@ -147,18 +147,19 @@ export default function Layout() {
             </div>
             <div>
               <h3 className="font-bold text-white mb-4">{t('layout.footer.connect')}</h3>
-              <p className="text-sm text-slate-400 mb-4">
-                {t('layout.footer.connect_desc')}
-              </p>
-              <div className="flex gap-2">
-                <input 
-                  type="email" 
-                  placeholder={t('layout.footer.email_placeholder')} 
-                  className="bg-white border-3 border-slate-700 text-slate-900 rounded-2xl px-4 py-2 text-sm w-full focus:outline-none focus:border-brand-pink font-medium"
-                />
-                <button className="bg-brand-pink text-slate-900 px-6 py-2 chunky-btn text-sm">
-                  {t('layout.footer.join')}
-                </button>
+              <div className="flex flex-col gap-3">
+                <div className="inline-flex items-center gap-3 bg-slate-800 border-2 border-slate-700 rounded-xl px-4 py-3 w-full">
+                  <Mail className="w-5 h-5 text-brand-pink" />
+                  <a href="mailto:edulogia@googlegroups.com" className="text-slate-200 hover:text-brand-yellow transition-colors font-medium text-sm">
+                    edulogia@googlegroups.com
+                  </a>
+                </div>
+                <div className="inline-flex items-center gap-3 bg-slate-800 border-2 border-slate-700 rounded-xl px-4 py-3 w-full">
+                  <img src="/assets/linkedin_icon.svg" alt="LinkedIn" className="w-5 h-5 rounded-sm" />
+                  <a href="https://www.linkedin.com/company/edulogia-it" target="_blank" rel="noopener noreferrer" className="text-slate-200 hover:text-brand-yellow transition-colors font-medium text-sm">
+                    LinkedIn
+                  </a>
+                </div>
               </div>
             </div>
           </div>

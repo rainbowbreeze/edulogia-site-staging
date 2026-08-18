@@ -1,5 +1,5 @@
 ---
-title: "It Takes a Whole Village in Pavia"
+title: "It Takes a Whole Village - Pavia"
 slug: "event-paviacittafuturo-2026"
 excerpt: "A panel of experts to discuss how smartphones and social media are negatively changing students' ability to learn and creating new diseases that did not exist before. On the fundamental role of school in educating parents and children on a correct use of digital tools and technology. And on how parental control tools can be used to support a dialogue between parents and children, instead of imposing unilateral rules that inevitably generate conflict."
 date: "2026-05-16"

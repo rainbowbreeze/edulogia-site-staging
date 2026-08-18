@@ -1,5 +1,5 @@
 ---
-title: "Serve un Intero Villaggio a Pavia"
+title: "Serve un Intero Villaggio - Pavia"
 slug: "event-paviacittafuturo-2026"
 excerpt: "Un panel di esperti per discutere di come celluari e social stiano cambiando (in negativo) la capacità degli studenti di imparare e stiano creando nuove malattie che prima non esistevano. Del ruolo fondamentale della scuola nell'educazione di genitori e figli ad un corretto uso del digitale e della tecnologia. E di come gli strumenti di parental control possono essere usati per supportare un dialogo tra genitori e figli, invece di imporre delle regole unilaterali, che generano irrimediabilmente un contrasto."
 date: "2026-05-16"
