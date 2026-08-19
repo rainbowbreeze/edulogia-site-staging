@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Edulogia</title>
+    <link>https://edulogia.it</link>
+    <description>Guides, suggestions, and support to build healthy digital habits.</description>
+    <language>en</language>
+    <lastBuildDate>Tue, 02 Jun 2026 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://edulogia.it/rss-en.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title><![CDATA[Turning a phone into a simple and safe digital camera for children]]></title>
+      <link>https://edulogia.it/resources/android-phone-as-a-dumb-digital-camera</link>
+      <guid isPermaLink="true">https://edulogia.it/resources/android-phone-as-a-dumb-digital-camera</guid>
+      <pubDate>Tue, 02 Jun 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A step-by-step guide to configuring a smartphone to be used only as a simple digital camera, without the need for a SIM card, Internet, and without access to other apps.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[It Takes a Whole Village - Pavia]]></title>
+      <link>https://edulogia.it/blog/event-paviacittafuturo-2026</link>
+      <guid isPermaLink="true">https://edulogia.it/blog/event-paviacittafuturo-2026</guid>
+      <pubDate>Sat, 16 May 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A panel of experts to discuss how smartphones and social media are negatively changing students' ability to learn and creating new diseases that did not exist before. On the fundamental role of school in educating parents and children on a correct use of digital tools and technology. And on how parental control tools can be used to support a dialogue between parents and children, instead of imposing unilateral rules that inevitably generate conflict.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Freedom, Control and Trust in the digital world - La Flag School]]></title>
+      <link>https://edulogia.it/blog/event-parental-control-laflag-2026</link>
+      <guid isPermaLink="true">https://edulogia.it/blog/event-parental-control-laflag-2026</guid>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[My first meeting in a school on the importance of educating children to a mindful and legal approach to digital technology, and how to do it. We also talked about how, thanks to respecting the age limits imposed by apps, agreements between parents and constant dialogue, it is possible to better manage the sense of exclusion of children when other families make less mindful choices than ours regarding the use of these tools.
+
+Parental Control in the Digital Age: A Shared Reflection between School, Parents and Students]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Digitale, Insiere in Borgarello]]></title>
+      <link>https://edulogia.it/blog/event-digitale-insieme-borgarello-2026</link>
+      <guid isPermaLink="true">https://edulogia.it/blog/event-digitale-insieme-borgarello-2026</guid>
+      <pubDate>Tue, 17 Feb 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[An event on digital education in Borgarello, where we talked about parental control, video games, and the development of computational thinking, with a mindful approach to technology. And where the many parents present shared both the desire to educate in this direction, and the great practical and social difficulties in the daily management of devices with their children.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Why Edulogia?]]></title>
+      <link>https://edulogia.it/blog/20260107-edulogia_launch</link>
+      <guid isPermaLink="true">https://edulogia.it/blog/20260107-edulogia_launch</guid>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[The reasons behind the launch of this project. To EDUcate on techNOLOGY. Together.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Google Family Link Guide for Android]]></title>
+      <link>https://edulogia.it/resources/family-link-android-guide</link>
+      <guid isPermaLink="true">https://edulogia.it/resources/family-link-android-guide</guid>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
+      <description><![CDATA[A practical tutorial on how to set app limits, screen-free time, and school time on your children's Android devices.]]></description>
+    </item>
+  </channel>
+</rss>

@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { MonitorPlay, Home, FileText, Menu, X, Globe, Sparkles, Mail } from 'lucide-react';
+import { MonitorPlay, Home, FileText, Menu, X, Globe, Sparkles, Mail, Rss } from 'lucide-react';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import EdulogiaLogo from './EdulogiaLogo';
@@ -158,6 +158,12 @@ export default function Layout() {
                   <img src="/assets/linkedin_icon.svg" alt="LinkedIn" className="w-4 h-4 rounded-sm" />
                   <a href="https://www.linkedin.com/company/edulogia-it" target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition-colors">
                     LinkedIn
+                  </a>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Rss className="w-4 h-4 text-brand-pink" />
+                  <a href={i18n.resolvedLanguage === 'it' ? "/rss-it.xml" : "/rss-en.xml"} target="_blank" rel="noopener noreferrer" className="hover:text-brand-yellow transition-colors">
+                    RSS Feed
                   </a>
                 </li>
               </ul>
